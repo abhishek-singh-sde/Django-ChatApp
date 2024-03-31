@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Channels</title>
+
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	{% include 'nav.html' %}
+	<div class="container">
+		<h1 class="heading" style="background-color:rgb(187, 54, 218);">Select a name for your Channel </h1>
+		<h1 class="heading" style="background-color:rgb(49, 183, 220);">Use same name to join that Channel again</h1>
+	</div>
+
+	<div class="container">
+		<h4 class="heading">Room Name?</h4>
+		<input class="textinput" type="text" id="room-name-input" size="50">
+		<input class='button' type="submit" id="room-name-submit" value="Enter">
+	</div>
+
+	<script src="{% static 'index.js' %}"></script>
+</body>
+</html>
